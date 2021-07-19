@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* For Dectop */
+ 
+ .col-1 {width: 8.33%;}
+ .col-2 {width: 16.66%;}
+ .col-3 {width: 25%;}
+ .col-4 {width: 33.33%;}
+ .col-5 {width: 41.66%;}
+ .col-6 {width: 50%;}
+ .col-7 {width: 58.33%;}
+ .col-8 {width: 66.66%;}
+ .col-9 {width: 75%;}
+ .col-10 {width: 83.33%;}
+ .col-11 {width: 91.66%;}
+ .col-12 {width: 100%;}
+
+/* For End */
+/* header start here */
+.logo{
+      text-align: left;
+      position: relative;
+      right: 40px;
+}
+.heading-h1 h1{
+    text-align: right;
+    padding: 70px;
+
+}
+.nav-manu{
+       flex-direction: row;
+       justify-content: flex-end;
+}
+.nav-manu a{
+         background: transparent;
+         border: transparent;
+}
+   /* header end here */
+   
+   /* profile start here */
+   .profile .top-weather-icon{
+    right: 60px;
+    top: 20px;
+    width: 180px;
+   transition:  3s;
+}
+.profile .top-weather-icon:hover{
+      width: 240px;
+}
+.bottom-weather-icon{
+    width: 180px;
+    left: 40px;
+     transition: 3s;
+}
+.bottom-weather-icon:hover{
+    width: 250px;
+
+}
+/* profile end here */
+
+/* about me start here  */
+
+.aboutme-profile{
+                margin-top: 230px;
+                
+}
+.aboutme-profile img{
+    border-radius: 200px;
+    width: 400px;
+    height: 315px;
+    padding: 10px;
+}
+
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none; 
+    width: 150px;
+    margin-left: 795px;
+}
+.aboutme-hr{
+    width: 70%;
+    border: 2px solid white;
+}
+.aboutme-desc p{
+               padding: 20px 10px 20px 0px;
+               text-align: left;
+               position: relative;
+               margin-left:0px;
+
+}
+.aboutme-desc{
+
+}
+
+
+/* about me end here  */
+
+ /* contact star */ 
+
+.dotted-contact-hr{
+    border: dotted 6px white;
+   width: 150px;
+   border-bottom: none;
+   position: relative;
+   margin-left: 350px;
+   margin-top: 5px;
+
+}
+.enformation p{
+       padding: 5px;
+       margin-top: 10px;
+}
+
+.enformation input{
+               padding: 20px;
+               width: 60%;
+}
+.enformation input:focus{
+    width: 70%;
+          box-shadow: 0px 8px 12px rgb(235, 231, 231) ;
+          background-color: rgb(170, 130, 115);
+          
+}
+.enformation textarea{
+                     width: 60%;
+                     height: 150px;
+}
+.enformation textarea:focus{
+    width: 80%;
+    height: 250px ;
+    box-shadow: 4px 8px 15px black;
+}
+.btn button{
+    padding: 25px;
+    width: 150px;
+    font-size: 1.6rem;
+}
+.btn button:hover{
+ background-color: rgba(29, 177, 177, 0.87);
+ box-shadow: 10px 12px 16px rgb(20, 20, 20);
+}
+
+  /* contact end */
+
+  /* contact more way start */
+
+  .icon-link img{
+                margin-left: 20px;
+}
+.more-way{
+          height: 563px;
+          box-sizing: border-box;
+        
+}
+.icon-link{
+          position: relative;
+        padding: 30px 110px;
+}
+  .more-way::after{
+            content: '';
+            display: table;
+            clear: both;
+  }
+  
+  
+   /* .more-way{
+         height: 563px;
+   } */
+
+
+  /* contact more way end */
+
+  /* footer manu start */
+  .footer-manu{
+    text-align: center;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+   align-items: center;
+   position: relative;
+   right: 370px;
+}
+  .footer-manu a{
+      border: 1px solid gray;
+      background-color: rgb(40, 145, 139);
+    border-radius: 50px;
+    width: 400px;
+    height: 53px;
+    transition: 1s;
+}
+.footer-manu a:hover{
+              background-color: grey;
+              box-shadow: 0px 5px 5px black;
+              width: 450px;
+}
+
+  /* footer manu end */

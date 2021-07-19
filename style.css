@@ -1,0 +1,510 @@
+*{
+   
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.heading-h1 h1{
+    font-size: 2.5rem;
+
+}
+
+h1{
+    font-family: cursive;
+    font-size: 2.6rem;
+    padding: 30px;
+}
+h2{  
+    font-size: 2.5rem;
+    font-family: fantasy;
+    color: rgb(19, 92, 141);
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+p{
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+ a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.aboutme-hr{
+            width: 80%;
+            border: 2px solid white;
+}
+.dotted-hr{
+      border: dotted 6px white;
+     border-bottom: none; 
+     width: 150px;
+}
+ [class*='col-']{
+      float: left;
+      padding: 10px;
+ }
+  /* For Mobile */
+  [class*='col-']{
+    width: 100%;
+}
+  /* header start here */
+.conteiner{
+    background-color: #0c6168;
+    /* padding: 20px; */
+    text-align: center;
+    padding: 1% 7%;
+}
+.conteiner::after{
+    content: '#';
+    display: table;
+    clear: both;
+}
+.heading-h1{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.logo img{
+      border-radius: 70%;
+}
+.nav-manu{
+        display: flex;
+        text-transform:uppercase;
+        flex-direction: column;
+}
+.nav-manu a{
+        padding: 15px;
+        background-color: rgb(83, 136, 131);
+        border: 1px solid gray;
+        margin: 5px;
+        text-align: center;
+        border-radius: 50px;
+}
+.nav-manu a:hover{
+          background-color: grey;
+}
+ /* header end here */
+
+ /* profile start here */
+ .profile{
+     background-color: rgb(222, 238, 238);
+     padding: 140px 10px;
+    text-align: center;
+    position: relative;
+ }
+ 
+ .profile .top-weather-icon{
+            background-color: rgb(222, 238, 238);
+
+                  position: absolute;
+                  right: 20px;
+                  top: 10px;
+                  border-radius: 300px;
+                 transition: 3s;
+ }
+ .profile .top-weather-icon:hover{
+                    transform: rotate(360deg);
+}
+
+
+.profile-dasc h1{
+                 font-size: 3rem;
+}
+.profile-dasc p{
+                margin: 0  auto 20px auto ;
+                text-align:center ;
+                width: 90%;
+
+}
+ .bottom-weather-icon{
+                     position: absolute;
+                     left: 20px;
+                      border-radius: 300px;
+                      transition: 3s;
+ }
+ .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+       content: '';
+       display: table;
+       clear: both;
+}
+/* profile end here */
+
+ /* about me start here  */
+ .aboutme-profile img{
+     border-radius: 200px;
+     width: 250px;
+     padding: 20px;
+ }
+ .about{
+      background-color: rgb(83, 173, 164);
+      text-align: center;
+ }
+.aboutme-desc{
+           
+}
+.aboutme-desc p{
+             width: 80%;
+             text-align: justify;
+             margin-left: 10%;
+}
+.aboutme-desc p{
+       font-size: 1.6rem;
+       font-family: 'Courier New', Courier, monospace;
+       color: white;
+       text-align: center;
+}
+.aboutme-desc a{
+                  font-size: 1.6rem;
+                  font-family: 'Courier New', Courier, monospace;
+}
+.aboutme-button{
+               border: none;
+               border-radius: 20px;
+               padding: 15px 20px;
+               background-color: teal;  
+               color: white;           
+}
+.aboutme-button:hover{
+               background-color: aliceblue;   
+               color: black;        
+}
+.aboutme-hr{
+    width: 90%;
+    border: 2px solid white;
+}
+.about::after{
+           content: '';
+           display: table;
+           clear: both;
+}
+
+ /* about me end here  */
+
+
+ /* personal experience start here */
+
+.work-experience .card{
+       background-color: gray;
+       border: 1px solid black;
+       height: 750px;
+       padding: 1% 7%;
+}
+.work-experience .card:hover{
+                box-shadow: 0px 12px 15px black;
+
+    
+}
+
+.card-icon{
+    
+        text-align: center;
+        padding: 10px;
+           
+}
+.card-icon img{
+          border: 2px solid black;
+          width: 100px;
+          border-radius: 100%;
+          padding: 5px;
+       
+}
+.card-title{
+         text-align: center;
+         background-color: rgb(43, 39, 39);
+}
+.card-title h2{
+            font-size: 25px;
+            margin-top: 10px;
+}
+.card-desc li{
+             font-size: 1.2rem;
+}
+.card-desc li strong{
+                font-size: 1.3rem;
+}
+
+
+
+.education .card{
+    background-color: gray;
+    border: 1px solid black;
+    height: 750px;
+    padding: 1% 7%;
+}
+.education .card:hover{
+             box-shadow: 0px 12px 15px black;
+
+ 
+}
+.skill .card{
+    background-color: gray;
+    border: 1px solid black;
+    height: 750px;
+    padding: 1% 7%;
+}
+.skill .card:hover{
+             box-shadow: 0px 12px 15px black;
+
+ 
+}
+.skill-conteiner{
+              padding-right: 45px;   
+}
+.skill-conteiner li{
+                list-style: none;
+                font-weight: bolder;
+                margin: 30px 10px;
+                position: relative;
+                text-transform: uppercase;
+}
+.skill-conteiner li::before{
+                     content: '';
+                     position: absolute;
+                     top: calc(100% + 5%);
+                     left: 0px;
+                     width: 100%;
+                     height: 10px;
+                     background-color: rgb(86,86,153,.5);
+                     border-radius: 1000px;
+}
+.skill-conteiner li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5%);
+    left: 0px;
+    width: 0%;
+    height: 10px;
+    background-color: rgb(86,86,153,2);
+    border-radius: 1000px;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.skill-conteiner li.html::after{
+       animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 95%;
+    }
+}
+.skill-conteiner li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+ to{
+     width: 90%;
+ }
+}
+.skill-conteiner li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+ to{
+     width: 85%;
+ }
+}.skill-conteiner li.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript{
+ to{
+     width: 75%;
+ }
+}.skill-conteiner li.jquery::after{
+    animation-name: jquery;
+}
+@keyframes jquery{
+ to{
+     width: 85%;
+ }
+}.skill-conteiner li.nodejs::after{
+    animation-name: nodejs;
+}
+@keyframes nodejs{
+ to{
+     width: 70%;
+ }
+}
+.skill-conteiner li.experssjs::after{
+    animation-name: experssjs;
+}
+@keyframes experssjs{
+ to{
+     width: 65%;
+ }
+}
+.skill-conteiner li.github::after{
+    animation-name: github;
+}
+@keyframes github{
+ to{
+     width: 80%;
+ }
+}
+.skill-conteiner li.reactjs::after{
+    animation-name: reactjs;
+}
+@keyframes reactjs{
+ to{
+     width: 95%;
+ }
+}
+.work-experience::after{
+                  content: '';
+                  display: table;
+                  clear: both;
+}
+personal-experience::after{
+          content: '';
+          display: table;
+          clear: both;
+}
+.skill::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* personal education experience end here */
+
+   /* contact star */
+.contact-me{
+     background-color: rgb(96, 74, 117);
+     text-align: center;
+}
+.dotted-contact-hr{
+    border: dotted 6px white;
+    width: 150px;
+    text-align: center;
+    border-bottom: none;
+}
+ .enformation p{
+          text-align: center;
+          
+}
+.enformation input{
+        padding: 10px;
+        width: 50%;
+        border-radius: 10px;
+        font-size: 1rem;
+        text-align: center;
+        transition: 1s;
+}
+.enformation input:focus{
+              width: 60%;
+                    box-shadow: 0px 3px 10px rgb(235, 231, 231) ;
+                    background-color: rgb(170, 130, 115);
+                    
+}
+.enformation textarea{
+          text-align: center;
+        font-size: 1.3rem;
+        resize: none;
+        border-radius: 20px;
+        height: 60px;
+        width: 50%;
+        transition: 3s;
+}
+.enformation textarea:focus{
+                  width: 70%;
+                  height: 200px ;
+                  box-shadow: 1px 4px 12px wheat;
+}
+.btn button{
+            padding: 15px;
+            width: 100px;
+            border-radius: 15px;
+            font-size: 1rem;
+            margin: 10px;
+            background-color: rgb(196, 86, 86);
+            color: wheat;
+            transition: 1s;
+}
+.btn button:hover{
+         background-color: rgba(29, 177, 177, 0.87);
+         box-shadow: 0px 6px 10px black;
+}
+.contact-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+   /* contact end */
+
+   /* contact more way start */
+.more-way{
+      background-color: rgb(96, 74, 117);
+      text-align: center;
+}
+.icon-link{
+      /* padding-top: 10px; */
+      
+}
+.icon-link img{
+    padding: 10px;
+    width: 80px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+  border-radius: 100%;
+  float: left;
+}
+   .facebook-instagrame img{
+        height: 80px;
+        align-items: center;
+        margin-top: 20px;
+}
+.twiter-whatsapp img{
+        height: 80px;
+        align-items: center;
+        margin-top: 20px;
+}
+.gmail-tel img{
+        height: 80px; 
+        align-items: center;
+        margin-top: 20px;
+        
+}
+
+.more-way::after{
+     content: '';
+     display: table;
+     clear: both;
+}
+
+   /* contact more way end */
+
+     /* footer manu start */
+
+     .footer-manu{
+          padding: 30px 0px;
+     }
+   .footer-manu a{
+    margin: 20px;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    
+}
+.footer-manu a:hover{
+    background-color: grey;
+    border-radius: 50px;
+}
+
+  /* footer manu end */
+
+  .footer{
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: black;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
